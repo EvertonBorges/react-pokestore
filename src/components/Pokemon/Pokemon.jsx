@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button, Card } from 'react-bootstrap';
 
 import axios from 'axios';
 
@@ -23,12 +24,14 @@ const Pokemon = ({index, pokemon}) => {
     }, [pokemon]);
 
     return (
-        <div className="pokemon">
-            <div className="pokemon-header">{ id && `#${id}` } {pokemon.name}</div>
-            { sprites && <img src={sprites.front_default} alt={pokemon.name}/> }
-            { price && <div className="pokemon-price">{ Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(price.toFixed(2)) }</div> }
-            <button className="pokemon-buy-button">BUY</button>
-        </div>
+        <Card className="pokemon">
+            <Card.Body>
+                <Card.Title className="pokemon-header">{ id && `#${id}` } {pokemon.name}</Card.Title>
+                { sprites && <Card.Img src={sprites.front_default} /> }
+                { price && <Card.Text className="pokemon-price">{ Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(price.toFixed(2)) }</Card.Text> }
+                <Button className="pokemon-buy-button" variant="primary">BUY</Button>
+            </Card.Body>
+        </Card>
     );
 }
 

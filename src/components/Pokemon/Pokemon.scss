@@ -2,13 +2,12 @@
     background-color: #222;
     border-radius: 4px;
     margin: 20px;
-    width: 250px;
+    width: 200px;
 }
 
 .pokemon-header {
     color: #fff;
     font-size: 1.1rem;
-    margin-top: 12px;
     text-transform: capitalize;
 }
 
@@ -18,11 +17,5 @@
 }
 
 .pokemon-buy-button {
-    background-color: white;
-    border-radius: 8px;
-    color: black;
-    cursor: pointer;
-    height: 28px;
-    margin-bottom: 20px;
-    width: 100px;
+    padding: 4px 25px;
 }
