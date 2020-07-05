@@ -1,0 +1,50 @@
+.card__item {
+    text-align: center;
+    margin: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-bottom: 15px;
+}
+
+.btn__delete {
+    position: relative;
+    float: right;
+    border-radius: 50%;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 0px;
+}
+
+.card__img {
+    height: 50px;
+    width: 50px;
+}
+
+.card__description {
+    width: 100%;
+    font-size: 1.1rem;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 0px;
+}
+
+.card__total {
+    margin: 8px 15px 0px;
+    font-size: 1.0rem;
+    text-align: end;
+
+    span {
+        font-weight: bold;
+    }
+}
