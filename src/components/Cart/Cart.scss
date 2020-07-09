@@ -9,6 +9,16 @@
     flex-direction: column;
     justify-content: flex-end;
     transition: ease-in-out 0.3s all;
+
+    ::-webkit-scrollbar {
+        border-radius: .5rem;
+        width: 10px;
+        background: #EBF0F6;
+    };
+    ::-webkit-scrollbar-thumb {
+        border-radius: .5rem;
+        background: #aaa;
+    };
 }
 
 .cart__expanded {
@@ -44,4 +54,8 @@
 .btn__showHide {
     width: 45px;
     margin: 0px auto 20px;
+}
+
+@media(max-width: 480px) {
+    
 }

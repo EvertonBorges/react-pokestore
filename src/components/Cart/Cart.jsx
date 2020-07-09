@@ -36,10 +36,10 @@ const Cart = ({ cart, isShow, handleCartStore, handleAmount, handleDelete, handl
                                 return previousValue + currentValue.price * currentValue.amount
                             }, 0.0).toFixed(2))
                         }</span>
-                        <Button onClick={() => handleDeleteAll()}>FINISH</Button>
+                        <Button variant="secondary" onClick={() => handleDeleteAll()}>FINISH</Button>
                     </>
                 }
-                <Button className="btn__showHide" onClick={() => handleCartStore()}>
+                <Button variant="secondary" className="btn__showHide" onClick={() => handleCartStore()}>
                     <FontAwesomeIcon icon={isShow ? faArrowRight : faArrowLeft } />
                 </Button>
             </div>
